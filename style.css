@@ -10,21 +10,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #dca314;
+  background-color: #104270;
 }
 
 .container {
-  width: 430px;
-  background-color: #222;
-  border-radius: 7px;
+  width: 480px;
+  background-color: #104270;
+  /* border-radius: 7px; */
 }
 
-.container h2 {
+.container #heading {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+}
+
+#heading h2,
+h3 {
   font-weight: 600;
-  font-size: 21px;
-  padding: 20px 30px;
-  border-bottom: 1px solid #444;
-  text-align: center;
+  font-size: 35px;
+  padding: 5px 30px;
+}
+
+#heading h2 {
+  color: #fff;
+}
+
+#heading h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #2f9a6f;
 }
 
 .wrapper {
@@ -33,30 +48,34 @@ body {
 
 .input-box {
   position: relative;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 15px;
 }
 
 .input-box input {
   width: 100%;
-  height: 53px;
-  color: #fff;
-  background: none;
-  font-size: 16px;
+  height: 50px;
+  color: #000;
+  background: #fff;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 500;
-  border: 1px solid #555;
-  border-radius: 5px;
+  border: 2px solid #fff;
+  border-radius: 15px;
   padding: 0 50px 0 30px;
   outline: none;
   transition: all 0.3s ease;
   letter-spacing: 1.4px;
 }
 
-.input-box span {
+/* .input-box span {
   position: absolute;
   right: 13px;
   cursor: pointer;
   line-height: 53px;
   color: #aaa;
-}
+} */
 
 .input-box span:hover {
   color: #4285f4 !important;
@@ -66,7 +85,7 @@ body {
   width: 100%;
   height: 4px;
   position: relative;
-  background-color: #333;
+  background-color: #fff;
   margin-top: 12px;
   border-radius: 25px;
 }
@@ -96,7 +115,7 @@ body {
 }
 
 .pass-length {
-  margin: 25px 0 20px;
+  margin: 15px 0 20px;
 }
 
 .pass-length .details {
@@ -109,17 +128,33 @@ body {
   height: 5px;
 }
 
+.pass-length .title {
+  font-family: "Times New Roman", Times, serif;
+  color: #2f9a6f;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.pass-settings .title {
+  font-family: "Times New Roman", Times, serif;
+  color: #2f9a6f;
+  font-weight: 600;
+  font-size: 25px;
+}
+
 .pass-settings .options {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
   margin-top: 20px;
+  color: #fff;
 }
 
 .pass-settings .options .option {
+  color: #fff;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   width: 50%;
 }
 
@@ -135,8 +170,9 @@ body {
 
 .options .option label {
   cursor: pointer;
-  color: #aaa;
+  color: #fff;
   padding-left: 16px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .generate-btn {
@@ -145,8 +181,9 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  background: #444;
-  font-size: 17px;
+  background: #2f9a6f;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
   padding: 15px 0;
   border-radius: 5px;
   text-transform: uppercase;
@@ -154,7 +191,7 @@ body {
 }
 
 .generate-btn:hover {
-  background: #333;
+  background: #237d59;
 }
 
 .generate-btn:active {
