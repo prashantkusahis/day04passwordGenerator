@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="password.png" type="image/x-icon" />
   </head>
   <body>
     <div class="container">
@@ -22,7 +23,12 @@
             placeholder="Random password"
             disabled
           />
-          <!-- <span class="material-symbols-rounded" id="copy">Copy</span> -->
+          <img
+            id="copyPass"
+            src="copy.png"
+            alt="copy the password"
+            onclick="copyPassword()"
+          />
         </div>
         <div class="pass-indicator"></div>
         <div class="pass-length">
@@ -71,6 +77,6 @@
         <button class="generate-btn">Generate Password</button>
       </div>
     </div>
-    <script src="script2.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
