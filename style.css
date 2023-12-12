@@ -14,14 +14,14 @@ body {
 }
 
 .container {
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   background-color: #104270;
 }
 
 .container #heading {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: flex-start;
 }
 
@@ -39,7 +39,6 @@ h3 {
 #heading h3 {
   font-family: "Times New Roman", Times, serif;
   color: #2f9a6f;
-  /* border-bottom: 2px solid #2f9a6f; */
 }
 
 #heading div {
@@ -85,14 +84,6 @@ h3 {
   height: 27px;
   margin-right: 15px;
 }
-
-/* .input-box span {
-  position: absolute;
-  right: 13px;
-  cursor: pointer;
-  line-height: 53px;
-  color: #aaa;
-} */
 
 .input-box span:hover {
   color: #4285f4 !important;
@@ -213,4 +204,11 @@ h3 {
 
 .generate-btn:active {
   transform: scale(0.95);
+}
+
+@media screen and (max-width: 600px) {
+  /* Adjust styles for screens with a width of 600 pixels or less */
+  .container {
+    max-width: 100%; /* Allow the container to take the full width */
+  }
 }

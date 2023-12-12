@@ -57,6 +57,7 @@ const generatePassword = () => {
   passwordInput.value = randomPassword;
 };
 
+//Function to indicate the password Strength
 const updatePassIndicator = () => {
   passIndicator.id =
     lengthSlider.value <= 8
@@ -66,6 +67,7 @@ const updatePassIndicator = () => {
       : "strong";
 };
 
+//Function to update the password length slider
 const updateSlider = () => {
   document.querySelector(".pass-length span").innerHTML = lengthSlider.value;
   updatePassIndicator();
@@ -77,7 +79,7 @@ generateBtn.addEventListener("click", () => {
   updateSlider();
 });
 
+//Adding event listener to the copy icon
 copyPass.addEventListener("click", () => {
   navigator.clipboard.writeText(passwordInput.value);
 });
-
