@@ -44,3 +44,7 @@ Access the source code on GitHub:
 Had a blast coding this project! Elevate your password game and experience security with a touch of customization. Try it out, share your thoughts, and stay tuned for more exciting projects! 🌐✨
 
 #WebDevelopment #JavaScript #PasswordSecurity #UserExperience #CodeEveryday #LearnToCode #WebDevChallenge #DailyCoding #BuildProjects #ClipboardAPI 🚀🔒
+
+Important:
+What new thing i learnt while making this?
+I learnt to use the Clipboard API.
